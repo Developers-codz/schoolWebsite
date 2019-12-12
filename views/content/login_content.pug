@@ -1,0 +1,32 @@
+div(class="login_container")
+  form(action="/")
+    div(class="row")
+      h2(style="text-align:center") Login with Social Media or Manually
+      div(class="vl")
+        span(class="vl-innertext") or
+
+      div(class="col")
+        a(href="#" class="fb btn")
+          i(class="fa fa-facebook fa-fw") Login with Facebook
+
+        a(href="#" class="twitter btn")
+          i(class="fa fa-twitter fa-fw") Login with Twitter
+        
+        a(href="#" class="google btn")
+            i(class="fa fa-google fa-fw") Login with Google+
+
+      div(class="col")
+        div(class="hide-md-lg")
+          p Or sign in manually:
+
+        input(type="text" name="username" placeholder="Username" required)
+        input(type="password" name="password" placeholder="Password" required)
+        input(type="submit" value="Login")
+
+
+div(class="bottom-container")
+  div(class="row")
+    div(class="col")
+      a(href="#" style="color:white" class="btn") Sign up
+    div(class="col")
+      a(href="#" style="color:white" class="btn") Forgot password?

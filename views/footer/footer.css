@@ -1,0 +1,20 @@
+#footer {
+    
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 200px;
+    padding: 40px;
+    background-color:grey;
+    text-align: center;
+}
+
+#footer #head{
+    font-weight: bold;
+    color: white;
+    font-size: 20pt;
+}
+
+#footer .font{
+    font-size: 14pt;
+}

@@ -1,0 +1,118 @@
+.home_content{
+    margin-top:20px;
+}
+.home_content_container{
+    width: 85%;
+    height: auto;
+    float: left;
+    margin: 50px 0;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    text-align: justify;
+}
+
+.home_content_container h2{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: 'calibri';
+    padding:10px;
+    margin:10px;
+    color: white;
+}
+
+#image1{
+    width: 600px;
+    height: 400px;
+}
+
+img{
+    width: 60%;
+    height:auto;
+    float: left;
+}
+
+#notification {
+    width: 70%;
+    height: auto;
+    background-color: rgb(238, 234, 234);
+    float: left;
+    padding: 50px;
+    padding-left: 60px;
+    color: blue;
+    font-size: 20pt;
+    margin-top: 20px;
+}
+
+#notification a {
+    text-decoration: none;
+}
+
+#notice {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: underline;
+    color: red;
+}
+
+#rightSideBar {
+    margin-top: 20px;
+    width: 5%;
+    height: 400px;
+    float: right;
+    clear:right;
+    color: white;
+    font-size: 10px;
+}
+
+#rightSideBar img {
+    margin: 6px;
+}
+
+#enquiryForm{
+    height:400px;
+    width: 40%;
+    border: 2px solid white;
+    float: right;
+    padding: 20px 30px;
+    overflow: hidden;
+    color: black;
+}
+
+#enquiryForm h2{
+    color: white;
+}
+
+#enquiryForm input
+{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+#enquiryForm button{
+    border: none;
+    background-color: red;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#enquiryForm button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+

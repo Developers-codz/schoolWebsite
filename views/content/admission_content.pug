@@ -1,0 +1,126 @@
+div(id="admission-container")
+  h1 Admission Form For New Student
+
+  form(name="admForm" action="submit.php" onsubmit="return dataValidator()" method="post")
+
+  label(class = 'label' for="firstName") FirstName :&nbsp;&nbsp;
+    input(class="input-field" type="text"  name="firstName" placeholder="First Name" id='firstName')
+
+  
+
+  label(class = 'label',for="middleName")  &nbsp;&nbsp;MiddleName :&nbsp;&nbsp;
+    input(class="input-field" type="text" name="middleName" id='middleName' placeholder="Middle Name")
+
+  
+
+  label(class = 'label' for="lastName") &nbsp;&nbsp;LastName :&nbsp;&nbsp;
+    input(class="input-field" type="text" name="lastName" id='lastName' placeholder="Last Name")
+
+  hr
+  
+  span(class="label") Select Gender :   
+  label(class="label" for="male") &nbsp;&nbsp;Male
+    input(class="input-field",type="radio"  name="gender" id="male")  
+
+  label(class="label",for="female") Female
+    input(class="input-field" type="radio"  name="gender" id="female") 
+
+  label(class="label",for="others") Others
+    input(class="input-field" type="radio" name="gender" id="others" ) 
+
+
+  label(class="label",for="dob") D.O.B :&nbsp;&nbsp;
+    input(class="input-field" type="date"  name="dob" id="dob")
+
+  hr
+
+  label(class="label" for="Father's name") Father's Name :&nbsp;&nbsp;
+    input(class="input-field" type="text" name="Father's name" id="Father's name" placeholder="Father's Name")
+
+    label(class="label" for="Mother's name") &nbsp;&nbsp;Mother's Name :&nbsp;&nbsp;
+    input(class="input-field" type="text" name="Mother's name" id="Mother's name" placeholder="Mother's Name")
+
+  hr
+
+  label(class="label" for="address") Address :&nbsp;&nbsp;
+    textarea(name="address" cols="35" rows="2" id="address" placeholder="Address")
+
+  label(class="label" for="city") &nbsp;&nbsp;City : &nbsp;&nbsp;
+      input(class="input-field" type="text" name="city" id="city" placeholder="City")
+
+  label(class="label" for="pincode") &nbsp;&nbsp;Pincode :&nbsp;&nbsp;
+      input(class="input-field" type="text" name="pincode" id="pincode" placeholder=" eg. - 800006")
+
+  hr
+
+
+  label(class="label" for="state") State : &nbsp;&nbsp;
+    input(class="input-field" type="text" name="State" id="state" placeholder="State")
+
+  label(class="label",for="Country") &nbsp;&nbsp;Country :&nbsp;&nbsp;
+    input(class="input-field" type="text" name="Country" id="country" placeholder="Country")  
+
+  label(class="label" for="phoneNo") &nbsp;&nbsp;Phone No.:&nbsp;&nbsp;
+    input(class="input-field" type="tel" name="phoneNo" id="phoneNo" placeholder="Phone No.")
+
+  br
+
+  label(class="label" for="email") Email :&nbsp;&nbsp;
+    input(class="input-field" type="email"  name="email" id="email" placeholder="Email")
+
+  hr
+
+  label(class="label" for="blood") Blood Group : &nbsp;&nbsp; 
+    select(name="blood") 
+      option(value="") --select--
+      option(value="A+") A+
+      option(value="A-") A-
+      option(value="B+") B+
+      option(value="B-") B-
+      option(value="0+") O+
+      option(value="0-") O-
+
+  label(class="label",for="identification mark") &nbsp;&nbsp;Identification Mark :&nbsp;&nbsp;
+  input(class="input-field" type="text"  name="identificationmark" placeholder="like mole on nose" id="identification mark")
+
+  label(class="label" for="class") &nbsp;&nbsp;Choose Class :  &nbsp;&nbsp;
+  select(name="class")
+    option(value="")--select--
+    option(value="1") 1
+    option(value="2") 2
+    option(value="3") 3
+    option(value="4") 4
+    option(value="5") 5
+    option(value="6") 6
+    option(value="7") 7
+    option(value="8") 8
+    option(value="9") 9
+    option(value="11") 11
+
+  hr
+  form(action="upload.php" method="post" enctype="multipart/image-data") Select Image to upload :
+    input(type="file" name="fileToUpload" id="fileToUpload", )
+    input(type="button" value="Upload Image" name="submit")
+
+
+  form(action="upload.php" method="post" enctype="multipart/sign-data") Select Parent's Signature to upload :
+    input(type="file" name="fileToUpload" id="fileToUpload")
+    input(type="button" value="Upload Signature" name="submit")
+
+  input(type="submit" value="submit"  name="submit") 
+
+  //- script. 
+  //- function dataValidator(){
+  //-   var firstname = document.forms["admForm"]["firstName"];
+  //-   if(firstname.value == " "){
+  //-   alert("Please enter your first name");
+  //-   firstname.focus();
+  //-   return false;
+  //-   }
+  //- }
+    
+
+
+
+
+

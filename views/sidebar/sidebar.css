@@ -1,0 +1,53 @@
+
+.sidenav {
+  float: left;
+    height: 100%;
+    width: 15%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 3px;
+    border-right: 1px solid white;
+  }
+  
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: rgb(248, 186, 16);
+  }
+  
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color:grey;
+    padding-left: 8px;
+  }
+  
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
